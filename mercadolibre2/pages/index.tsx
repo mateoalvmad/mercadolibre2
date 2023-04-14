@@ -23,7 +23,9 @@ export default function Home() {
           <section className='payments'></section>
           <section className='sales'></section>
 
-          <section className='combo'></section>
+          <section className='combo'>
+            <h1>Hola, yo voy a trabajar acá</h1>
+          </section>
           <section className='benefits'></section>
           <section className='discover'></section>
           <section className='stores'></section>
