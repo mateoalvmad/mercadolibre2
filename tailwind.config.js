@@ -12,11 +12,28 @@ module.exports = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+<<<<<<< HEAD:tailwind.config.js
       colors:{
         'footer-text-black':'#333333',
         'link-prefooter-blue':'#3483FA',
         'background-index':'#666666',
         'category-color':'#EAE6E6',
+=======
+      colors: {
+        'section-black': '#333333',
+        'categories-black': '#33333399',
+        'card-green': '#00a650',
+        'section-title': '#666666',
+        'section-subtitle': '#3483fa',
+        'input-text': '#cecccc',
+        'buttons': '#00000040',
+        'yellow-color': '#FFF159',
+        'section-color': '#EBEBEB',
+        'footer-text-black':'#333333',
+        'link-prefooter-blue':'#3483FA',
+        'background-index':'#666666',
+        'category-color':'#EAE6E6'
+>>>>>>> navbar:mercadolibre2/tailwind.config.js
       }
     },
   },
