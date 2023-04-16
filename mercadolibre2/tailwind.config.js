@@ -21,7 +21,11 @@ module.exports = {
         'input-text': '#cecccc',
         'buttons': '#00000040',
         'yellow-color': '#FFF159',
-        'section-color': '#EBEBEB'
+        'section-color': '#EBEBEB',
+        'footer-text-black':'#333333',
+        'link-prefooter-blue':'#3483FA',
+        'background-index':'#666666',
+        'category-color':'#EAE6E6'
       }
     },
   },

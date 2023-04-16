@@ -13,3 +13,21 @@
     border: 1px solid red;
 }
 
+body{
+    background-color:#EBEBEB;
+}
+.letter-spacing-descubre{
+    letter-spacing: 4px;
+}
+.texto-grande{
+    @apply pt-16 pl-40 flex align-middle font-normal items-center text-2xl gap-4 text-gray-500;
+}
+.titulo-prefooter{
+    @apply text-gray-950 text-lg font-medium;
+}
+.contenido-prefooter{
+    @apply grid  gap-3 text-gray-500 justify-center align-middle w-4/12 text-center justify-items-center;
+}
+.enlace-prefooter{
+    @apply cursor-pointer font-normal align-middle text-center text-link-prefooter-blue;
+}
