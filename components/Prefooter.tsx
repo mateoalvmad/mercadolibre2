@@ -1,7 +1,7 @@
 const Prefooter = () => {
   return (
     <div className="flex justify-between align-items-center justify-items-center align-middle pl-40 pr-40 pt-16 pb-16 gap-10 bg-white">
-       <div className="grid  gap-3 text-gray-500 justify-center align-middle w-4/12 text-center justify-items-center">
+       <div className="contenido-prefooter">
             <svg width="66" height="46" viewBox="0 0 66 46" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M0.910339 4.06598C0.910339 2.40786 2.28769 1.06348 3.98457 1.06348H61.941C63.6388 1.06348 65.0152 2.40341 65.0152 4.06598V41.2467C65.0152 42.9049 63.6379 44.2493 61.941 44.2493H3.98457C2.28678 44.2493 0.910339 42.9093 0.910339 41.2467V4.06598Z" fill="white"/>
                 <mask id="mask0_1_635" /*style="mask-type:luminance"*/ maskUnits="userSpaceOnUse" x="0" y="0" width="66" height="46">
@@ -22,16 +22,16 @@ const Prefooter = () => {
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M43.6365 24.6277H35.4569C34.9541 24.6277 34.5465 24.2295 34.5465 23.7383C34.5465 23.2471 34.9541 22.8489 35.4569 22.8489H43.6365C44.1393 22.8489 44.5469 23.2471 44.5469 23.7383C44.5469 24.2295 44.1393 24.6277 43.6365 24.6277Z" fill="#484848"/>
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M58.2174 24.6277H49.6699C49.1672 24.6277 48.7596 24.2295 48.7596 23.7383C48.7596 23.2471 49.1672 22.8489 49.6699 22.8489H58.2174C58.7201 22.8489 59.1277 23.2471 59.1277 23.7383C59.1277 24.2295 58.7201 24.6277 58.2174 24.6277Z" fill="#484848"/>
             </svg>
-            <span className="text-gray-950 text-lg font-medium">Paga con tarjeta o en efectivo</span>
+            <span className="titulo-prefooter">Paga con tarjeta o en efectivo</span>
             <span>Con Mercado Pago, paga en cuotas y aprovecha la comodidad de financiación que te da tu banco, o hazlo con efectivo en puntos de pago. ¡Y siempre es seguro!</span>
-            <span className="cursor-pointer font-normal align-middle text-center text-link-prefooter-blue">Cómo pagar con Mercado Pago</span>
+            <span className="enlace-prefooter">Cómo pagar con Mercado Pago</span>
         </div>
         <div className="self-center">
             <svg width="1" height="66" viewBox="0 0 1 66" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect y="0.5" width="1" height="65" fill="#E2E2E2"/>
             </svg>
         </div>                   
-        <div className="grid  gap-3 text-gray-500 justify-center align-middle w-4/12 text-center justify-items-center">
+        <div className="contenido-prefooter">
             <svg width="56" height="49" viewBox="0 0 56 49" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_1_660)">
                 <path d="M53.1568 1H2.8432C1.82523 1 1 1.82523 1 2.8432V8.87832C1 9.89629 1.82523 10.7215 2.8432 10.7215H53.1568C54.1748 10.7215 55 9.89629 55 8.87832V2.8432C55 1.82523 54.1748 1 53.1568 1Z" stroke="#484848" stroke-width="1.3824"/>
@@ -50,23 +50,23 @@ const Prefooter = () => {
                 </clipPath>
                 </defs>
             </svg>                        
-            <span className="text-gray-950 text-lg font-medium">Envío gratis desde $ 90.000</span>
+            <span className="titulo-prefooter">Envío gratis desde $ 90.000</span>
             <span>Con solo estar registrado en Mercado Libre, tienes envíos gratis en miles de productos seleccionados.</span>
-            <span className="cursor-pointer font-normal align-middle text-center text-link-prefooter-blue">Conoce más sobre este beneficio</span>
+            <span className="enlace-prefooter">Conoce más sobre este beneficio</span>
         </div>
         <div className="self-center">
             <svg width="1" height="66" viewBox="0 0 1 66" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect y="0.5" width="1" height="65" fill="#E2E2E2"/>
             </svg> 
         </div>
-        <div className="grid  gap-3 text-gray-500 justify-center align-middle w-4/12 text-center justify-items-center">
+        <div className="contenido-prefooter">
             <svg width="51" height="55" viewBox="0 0 51 55" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M22.3787 33.8789L16.7929 28.2931C16.4024 27.9026 16.4024 27.2694 16.7929 26.8789L18.3787 25.2931C18.7692 24.9026 19.4024 24.9026 19.7929 25.2931L23.0858 28.586L32.3787 19.2931C32.7692 18.9026 33.4024 18.9026 33.7929 19.2931L35.3787 20.8789C35.7692 21.2694 35.7692 21.9026 35.3787 22.2931L23.7929 33.8789C23.4024 34.2695 22.7692 34.2695 22.3787 33.8789Z" fill="#3483FA"/>
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M25.2087 1.4126C25.2087 1.4126 18.2087 11.4126 1.20867 8.4126C1.20867 8.4126 -4.79133 37.7676 25.2087 53.5906C55.2087 37.7676 49.2087 8.4126 49.2087 8.4126C32.2087 11.4126 25.2087 1.4126 25.2087 1.4126Z" stroke="#474747" stroke-width="1.413" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
-            <span className="text-gray-950 text-lg font-medium">Seguridad, de principio a fin</span>
+            <span className="titulo-prefooter">Seguridad, de principio a fin</span>
             <span>¿No te gusta? ¡Devuélvelo! En Mercado Libre, no hay nada que no puedas hacer, porque estás siempre protegido.</span>
-            <span className="cursor-pointer font-normal align-middle text-center text-link-prefooter-blue">Cómo te protegemos</span>
+            <span className="enlace-prefooter">Cómo te protegemos</span>
         </div>
     </div>
   )

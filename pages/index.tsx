@@ -51,9 +51,9 @@ const indexPage=()=>{
           <section className='discover'></section>
           <section className='stores'></section>
           <section className='super'>
-            <div className="pt-16 pl-40 flex align-middle align-items-center font-normal text-2xl gap-4 text-gray-500 items-center">
+            <div className="texto-grande">
                 <span>Colecciones:</span>
-                <span className="text-2xl flex items-center text-gray-500">Supermercado</span>
+                <span className="text-2xl font-bold flex items-center text-gray-500">Supermercado</span>
                 <svg width="15" height="9" viewBox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M13.7149 0.75L7.44338 7.0065L1.17188 0.75" stroke="#3483FA" stroke-width="1.5"/>
                 </svg>                    
@@ -73,22 +73,22 @@ const indexPage=()=>{
             </div>
           </section>
           <section className='categories'>
-            <div className="pt-16 pl-40 flex align-middle align-items-center font-normal text-2xl gap-4 text-gray-500">
+            <div className="texto-grande">
                   <span>Categorías populares</span>
             </div>
             <div className="w-80 grid ml-40 mt-4 text-gray-600 gap-1 mb-5">
                   <div className="flex gap-1">
-                  <Categoria categoria="Carros, Motos y Otros">
-                  <svg width="49" height="49" viewBox="0 0 49 49" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M42.5 20.375L40.731 7.111C40.599 6.117 39.751 5.375 38.749 5.375H10.251C9.249 5.375 8.401 6.117 8.269 7.111L6.5 20.375" stroke="#3483FA" stroke-miterlimit="10"/>
-                              <path d="M14.5 37.375V43.375H5.5V37.375" stroke="#3483FA" stroke-miterlimit="10" stroke-linecap="square"/>
-                              <path d="M43.5 37.375V43.375H34.5V37.375" stroke="#3483FA" stroke-miterlimit="10" stroke-linecap="square"/>
-                              <path d="M46.5 37.375H2.5V26.778C2.5 25.87 2.809 24.988 3.377 24.279L6.5 20.375H42.5L45.623 24.279C46.191 24.989 46.5 25.87 46.5 26.778V37.375Z" stroke="#3483FA" stroke-miterlimit="10" stroke-linecap="square"/>
-                              <path d="M38.5 32.375C40.1569 32.375 41.5 31.0319 41.5 29.375C41.5 27.7181 40.1569 26.375 38.5 26.375C36.8431 26.375 35.5 27.7181 35.5 29.375C35.5 31.0319 36.8431 32.375 38.5 32.375Z" stroke="#3483FA" stroke-miterlimit="10" stroke-linecap="square"/>
-                              <path d="M10.5 32.375C12.1569 32.375 13.5 31.0319 13.5 29.375C13.5 27.7181 12.1569 26.375 10.5 26.375C8.84315 26.375 7.5 27.7181 7.5 29.375C7.5 31.0319 8.84315 32.375 10.5 32.375Z" stroke="#3483FA" stroke-miterlimit="10" stroke-linecap="square"/>
-                              <path d="M21.5 29.375H27.5" stroke="#3483FA" stroke-miterlimit="10" stroke-linecap="square"/>
-                          </svg>
-                  </Categoria>
+                    <Categoria categoria="Carros, Motos y Otros">
+                    <svg width="49" height="49" viewBox="0 0 49 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M42.5 20.375L40.731 7.111C40.599 6.117 39.751 5.375 38.749 5.375H10.251C9.249 5.375 8.401 6.117 8.269 7.111L6.5 20.375" stroke="#3483FA" stroke-miterlimit="10"/>
+                                <path d="M14.5 37.375V43.375H5.5V37.375" stroke="#3483FA" stroke-miterlimit="10" stroke-linecap="square"/>
+                                <path d="M43.5 37.375V43.375H34.5V37.375" stroke="#3483FA" stroke-miterlimit="10" stroke-linecap="square"/>
+                                <path d="M46.5 37.375H2.5V26.778C2.5 25.87 2.809 24.988 3.377 24.279L6.5 20.375H42.5L45.623 24.279C46.191 24.989 46.5 25.87 46.5 26.778V37.375Z" stroke="#3483FA" stroke-miterlimit="10" stroke-linecap="square"/>
+                                <path d="M38.5 32.375C40.1569 32.375 41.5 31.0319 41.5 29.375C41.5 27.7181 40.1569 26.375 38.5 26.375C36.8431 26.375 35.5 27.7181 35.5 29.375C35.5 31.0319 36.8431 32.375 38.5 32.375Z" stroke="#3483FA" stroke-miterlimit="10" stroke-linecap="square"/>
+                                <path d="M10.5 32.375C12.1569 32.375 13.5 31.0319 13.5 29.375C13.5 27.7181 12.1569 26.375 10.5 26.375C8.84315 26.375 7.5 27.7181 7.5 29.375C7.5 31.0319 8.84315 32.375 10.5 32.375Z" stroke="#3483FA" stroke-miterlimit="10" stroke-linecap="square"/>
+                                <path d="M21.5 29.375H27.5" stroke="#3483FA" stroke-miterlimit="10" stroke-linecap="square"/>
+                            </svg>
+                    </Categoria>
                       <Categoria categoria="Computación">
                         <svg width="49" height="49" viewBox="0 0 49 49" fill="none" xmlns="http://www.w3.org/2000/svg">
                               <g clip-path="url(#clip0_1_464)">
