@@ -6,7 +6,28 @@ import {Categoria} from '@/components/Categoria'
 import { Carditem } from '@/components/Carditem'
 
 const inter = Inter({ subsets: ['latin'] })
+const items ={
+  itemsCol: [
+    {
+      imagen1:'media/item1-1.png',
+      imagen2:'media/item1-2.png'
+    },
+    {
+      imagen1:'media/item2-1.png',
+      imagen2:'media/item2-2.png'
+    },
+    {
+      imagen1:'media/item3-1.png',
+      imagen2:'media/item3-2.png'
+    },
+    {
+      imagen1:'media/item4-1.png',
+      imagen2:'media/item4-2.png'
+    },
+  ]
 
+  
+}
 const indexPage=()=>{
   return (
     < >
@@ -44,11 +65,11 @@ const indexPage=()=>{
                         <span className="font-semibold text-sm flex items-center letter-spacing-descubre">Descubre</span>
                         <span >Supermercado</span>                   
                     </div>                
-                </div>    
-                <Carditem imagen1="media/item1-1.png" imagen2="media/item1-2.png"></Carditem>
-                <Carditem imagen1="media/item2-1.png" imagen2="media/item2-2.png"></Carditem>
-                <Carditem imagen1="media/item3-1.png" imagen2="media/item3-2.png"></Carditem>
-                <Carditem imagen1="media/item4-1.png" imagen2="media/item4-2.png"></Carditem>                                    
+                </div> 
+                {
+                items.itemsCol.map((item, index)=>{
+                  return <Carditem key={`${item.imagen1}_${index}`} imagen1={item.imagen1} imagen2={item.imagen2}/>
+                })}                                      
             </div>
           </section>
           <section className='categories'>
