@@ -5,7 +5,7 @@ import { Layout } from '@/layouts/Layout'
 import Head from 'next/head'
 import React from 'react'
 
-const IndexPage = () => {
+const indexPage = () => {
   return (
     <>
       <Head>
@@ -30,4 +30,4 @@ const IndexPage = () => {
   )
 }
 
-export default IndexPage
+export default indexPage
