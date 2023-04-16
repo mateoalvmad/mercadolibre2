@@ -16,6 +16,7 @@ module.exports = {
         'footer-text-black':'#333333',
         'link-prefooter-blue':'#3483FA',
         'background-index':'#666666',
+        'category-color':'#EAE6E6',
       }
     },
   },
