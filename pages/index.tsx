@@ -1,6 +1,8 @@
 import {Header} from '@/components/Header'
 import { OfferSection } from '@/components/OfferSection'
 import { PosterSection } from '@/components/PosterSection'
+import { SubscriptionSection } from '@/components/SubscriptionSection'
+import { BenefitsSection } from '@/components/BenefitsSection'
 import {Footer} from '@/components/Footer'
 import { Prefooter } from '@/components/Prefooter'
 import {Categoria} from '@/components/Categoria'
@@ -42,154 +44,9 @@ const indexPage = () => {
         <>
           <PosterSection/> 
           <OfferSection/> 
-           <section className='flex h-[340px] w-full flex-col rounded bg-white'>
-            <div className='grid-cols-[1024px 3px 154px] grid h-[87px] w-full rounded-t-md bg-gradient-to-r from-[#a90f90] to-[#0c1a51]'>
-              <span className='pb-6  pl-0 pl-6 pt-6 text-2xl font-medium text-white'>
-                Suscríbete al nivel 6
-              </span>
-              <div className='my-6 h-[37px] w-0.5 bg-white '></div>
-              <div className='flex flex-col justify-center pl-1.5 pr-6 text-sm font-semibold text-white'>
-                <span className='text-sm font-medium line-through'>
-                  $ 50.690
-                </span>
-                <div>
-                  <span className='text-[22px] font-semibold leading-6'>
-                    $ 17.899
-                  </span>
-                  <span>/mes</span>
-                </div>
-              </div>
-            </div>
-            <div className='flex h-full flex-col'>
-              <span className='h-11 pl-6 pt-5 text-lg font-normal leading-4'>
-                Consigue los mejores beneficios en Mercado Libre
-              </span>
-              <div className='py- grid h-32 grid-cols-3 px-6'>
-                <div className='flex w-[337px] flex-row items-center justify-center gap-4 pr-12 text-base font-normal leading-4'>
-                <Image src='/media/combo/disney.png' 
-                    className='w-[73px] h-[73px]'
-                    width={73}
-                    height={73}
-                    alt='benefits' />
-                  <span>Disney+ sin cargo</span>
-                </div>
-                <div className='flex w-[337px] flex-row items-center justify-center gap-4 pr-12 text-base font-normal leading-4'>
-                <Image src='/media/combo/star.png' 
-                    className='w-[73px] h-[73px]'
-                    width={73}
-                    height={73}
-                    alt='benefits' />
-                  <span>Star+ sin cargo</span>
-                </div>
-                <div className='flex w-[337px] flex-row items-center justify-center gap-4 pr-12 text-base font-normal leading-4'>
-                    <Image src='/media/combo/truck.png' 
-                    className='w-[73px] h-[73px]'
-                    width={73}
-                    height={73}
-                    alt='benefits' />
-                  <span>
-                    Envíos gratis y rápidos desde $ 90.000 y 40% OFF en envíos
-                    de menos de $ 90.000
-                  </span>
-                </div>
-              </div>
-            </div>
-            <hr />
-            <div className='flex h-20 items-end justify-end'>
-              <button className='section-button mx-7 my-4'>Suscríbete</button>
-            </div>
-          </section>
-          <section className='w-full py-20'>
-            <div className='flex flex-row items-end gap-4'>
-              <span className='sections-title'>
-                Beneficios de Mercado Puntos
-              </span>
-              <span className='sections-blue'>Ver todos los beneficios</span>
-            </div>
-            <div className='flex flex-row justify-center gap-4 py-5'>
-              <div className='benefits-card'>
-                <Image
-                  className='benefits-image'
-                  src='/media/benefits/card1.png'
-                  fill
-                  alt='benefits'
-                />
-                <div className='benefits-info'>
-                  <Image
-                    className='benefits-info-logo'
-                    src='/media/benefits/combo.png'
-                    width={80}
-                    height={80}
-                    alt='benefits'
-                  />
-                  <div className='benefits-info-description gap-3'>
-                    <span className='benefits-info-description-title'>
-                      Sin cargo con el nivel 6{' '}
-                    </span>
-                    <span className='benefits-info-description-subtitle'>
-                      Disney+ y Star+{' '}
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <div className='benefits-card'>
-                <Image
-                  className='benefits-image'
-                  src='/media/benefits/card2.png'
-                  fill
-                  alt='benefits'
-                />
-                <div className='benefits-info'>
-                  <Image
-                    className='benefits-info-logo'
-                    src='/media/benefits/hbo.png'
-                    width={80}
-                    height={80}
-                    alt='benefits'
-                  />
-                  <div className='benefits-info-description gap-1'>
-                    <span className='benefits-info-description-gift'>
-                      7 DÍAS GRATIS
-                    </span>
-                    <span className='benefits-info-description-title'>
-                      Hasta 50% OFF
-                    </span>
-                    <span className='benefits-info-description-subtitle'>
-                      HBO Max
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <div className='benefits-card'>
-                <Image
-                  className='benefits-image'
-                  src='/media/benefits/card3.png'
-                  fill
-                  alt='benefits'
-                />
-                <div className='benefits-info'>
-                  <Image
-                    className='benefits-info-logo'
-                    src='/media/benefits/paramount.png'
-                    width={80}
-                    height={80}
-                    alt='benefits'
-                  />
-                  <div className='benefits-info-description gap-1'>
-                    <span className='benefits-info-description-gift'>
-                      7 DÍAS GRATIS
-                    </span>
-                    <span className='benefits-info-description-title'>
-                      Hasta 50% OFF
-                    </span>
-                    <span className='benefits-info-description-subtitle'>
-                      Paramount+
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
+          <SubscriptionSection/>
+          <BenefitsSection/>
+           
           <section className='w-full'>
             <span className='sections-title'>Descubre</span>
             <div className='my-5 flex flex-row items-center gap-4 '>

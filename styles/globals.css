@@ -62,16 +62,13 @@ hr {
     @apply mx-4 mb-4 mt-7;
   }
   .benefits-info-description-title {
-    @apply text-[22px] font-semibold leading-6;
+    @apply flex text-[22px] font-semibold leading-6 text-white;
   }
-  .benefits-info-description-gift {
-    font-weight: 600;
-    font-size: 11px;
-    line-height: 16px;
-    @apply text-sm font-semibold leading-4;
+  .benefits-info-description-trial {
+    @apply text-sm font-semibold leading-4 text-white;
   }
   .benefits-info-description-subtitle {
-    @apply text-xs font-normal leading-5;
+    @apply text-xs font-normal leading-5 pt-[50px] text-white;
   }
   
   
