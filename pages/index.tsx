@@ -8,6 +8,7 @@ import { Carditem } from '@/components/Carditem'
 import { Layout } from '@/layouts/Layout'
 import Head from 'next/head'
 import React from 'react'
+import Image from 'next/image';
 
 const items ={
   itemsCol: [
@@ -41,10 +42,373 @@ const indexPage = () => {
         <>
           <PosterSection/> 
           <OfferSection/> 
-          <section className='combo'></section>
-          <section className='benefits'></section>
-          <section className='discover'></section>
-          <section className='stores'></section>
+           <section className='flex h-[340px] w-full flex-col rounded bg-white'>
+            <div className='grid-cols-[1024px 3px 154px] grid h-[87px] w-full rounded-t-md bg-gradient-to-r from-[#a90f90] to-[#0c1a51]'>
+              <span className='pb-6  pl-0 pl-6 pt-6 text-2xl font-medium text-white'>
+                Suscríbete al nivel 6
+              </span>
+              <div className='my-6 h-[37px] w-0.5 bg-white '></div>
+              <div className='flex flex-col justify-center pl-1.5 pr-6 text-sm font-semibold text-white'>
+                <span className='text-sm font-medium line-through'>
+                  $ 50.690
+                </span>
+                <div>
+                  <span className='text-[22px] font-semibold leading-6'>
+                    $ 17.899
+                  </span>
+                  <span>/mes</span>
+                </div>
+              </div>
+            </div>
+            <div className='flex h-full flex-col'>
+              <span className='h-11 pl-6 pt-5 text-lg font-normal leading-4'>
+                Consigue los mejores beneficios en Mercado Libre
+              </span>
+              <div className='py- grid h-32 grid-cols-3 px-6'>
+                <div className='flex w-[337px] flex-row items-center justify-center gap-4 pr-12 text-base font-normal leading-4'>
+                <Image src='/media/combo/disney.png' 
+                    className='w-[73px] h-[73px]'
+                    width={73}
+                    height={73}
+                    alt='benefits' />
+                  <span>Disney+ sin cargo</span>
+                </div>
+                <div className='flex w-[337px] flex-row items-center justify-center gap-4 pr-12 text-base font-normal leading-4'>
+                <Image src='/media/combo/star.png' 
+                    className='w-[73px] h-[73px]'
+                    width={73}
+                    height={73}
+                    alt='benefits' />
+                  <span>Star+ sin cargo</span>
+                </div>
+                <div className='flex w-[337px] flex-row items-center justify-center gap-4 pr-12 text-base font-normal leading-4'>
+                    <Image src='/media/combo/truck.png' 
+                    className='w-[73px] h-[73px]'
+                    width={73}
+                    height={73}
+                    alt='benefits' />
+                  <span>
+                    Envíos gratis y rápidos desde $ 90.000 y 40% OFF en envíos
+                    de menos de $ 90.000
+                  </span>
+                </div>
+              </div>
+            </div>
+            <hr />
+            <div className='flex h-20 items-end justify-end'>
+              <button className='section-button mx-7 my-4'>Suscríbete</button>
+            </div>
+          </section>
+          <section className='w-full py-20'>
+            <div className='flex flex-row items-end gap-4'>
+              <span className='sections-title'>
+                Beneficios de Mercado Puntos
+              </span>
+              <span className='sections-blue'>Ver todos los beneficios</span>
+            </div>
+            <div className='flex flex-row justify-center gap-4 py-5'>
+              <div className='benefits-card'>
+                <Image
+                  className='benefits-image'
+                  src='/media/benefits/card1.png'
+                  fill
+                  alt='benefits'
+                />
+                <div className='benefits-info'>
+                  <Image
+                    className='benefits-info-logo'
+                    src='/media/benefits/combo.png'
+                    width={80}
+                    height={80}
+                    alt='benefits'
+                  />
+                  <div className='benefits-info-description gap-3'>
+                    <span className='benefits-info-description-title'>
+                      Sin cargo con el nivel 6{' '}
+                    </span>
+                    <span className='benefits-info-description-subtitle'>
+                      Disney+ y Star+{' '}
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div className='benefits-card'>
+                <Image
+                  className='benefits-image'
+                  src='/media/benefits/card2.png'
+                  fill
+                  alt='benefits'
+                />
+                <div className='benefits-info'>
+                  <Image
+                    className='benefits-info-logo'
+                    src='/media/benefits/hbo.png'
+                    width={80}
+                    height={80}
+                    alt='benefits'
+                  />
+                  <div className='benefits-info-description gap-1'>
+                    <span className='benefits-info-description-gift'>
+                      7 DÍAS GRATIS
+                    </span>
+                    <span className='benefits-info-description-title'>
+                      Hasta 50% OFF
+                    </span>
+                    <span className='benefits-info-description-subtitle'>
+                      HBO Max
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div className='benefits-card'>
+                <Image
+                  className='benefits-image'
+                  src='/media/benefits/card3.png'
+                  fill
+                  alt='benefits'
+                />
+                <div className='benefits-info'>
+                  <Image
+                    className='benefits-info-logo'
+                    src='/media/benefits/paramount.png'
+                    width={80}
+                    height={80}
+                    alt='benefits'
+                  />
+                  <div className='benefits-info-description gap-1'>
+                    <span className='benefits-info-description-gift'>
+                      7 DÍAS GRATIS
+                    </span>
+                    <span className='benefits-info-description-title'>
+                      Hasta 50% OFF
+                    </span>
+                    <span className='benefits-info-description-subtitle'>
+                      Paramount+
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section className='w-full'>
+            <span className='sections-title'>Descubre</span>
+            <div className='my-5 flex flex-row items-center gap-4 '>
+              <div className='discover-card'>
+                <div className='discover-card-info'>
+                  <span className='discover-card-info-text'>
+                    RENUEVA TUS ESPACIOS
+                  </span>
+                  <div className='discover-card-info-title'>
+                    <span>HOGAR MUEBLES</span>
+                    <span>HASTA 50% OFF</span>
+                  </div>
+                  <button className='section-button'>Ver más</button>
+                </div>
+                <Image
+                  className='rounded-sm'
+                  src='/media/discover/discovercard2.png'
+                  width={290}
+                  height={250}
+                  alt='benefits'
+                />
+              </div>
+              <div className='discover-card'>
+                <div className='discover-card-info'>
+                  <span className='discover-card-info-text'>
+                    SUSCRÍBETE AL NIVEL 6
+                  </span>
+                  <div className='discover-card-info-title'>
+                    <span>POR SOLO</span>
+                    <span>$ 17.990 CADA MES</span>
+                  </div>
+                  <button className='section-button'>Suscríbete</button>
+                </div>
+                <Image
+                  className='rounded-sm'
+                  src='/media/discover/discovercard1.png'
+                  width={290}
+                  height={250}
+                  alt='benefits'
+                />
+              </div>
+            </div>
+          </section>
+          <section className='mb-5 mt-14'>
+            <div className='flex flex-row items-end gap-6'>
+              <span className='sections-title'>
+                Las mejores tiendas te esperan
+              </span>
+              <span className='sections-blue'>Ver tiendas</span>
+            </div>
+            <div className=' mt-5 flex w-full flex-row items-center gap-4'>
+              <div className='shops-card'>
+                <Image
+                  className='shops-card-banner'
+                  src='/media/shops/legoback.png'
+                  width={340}
+                  height={95}
+                  alt='benefits'
+                />
+                <Image
+                  className='shops-card-logo'
+                  src='/media/shops/lego.png'
+                  width={80}
+                  height={80}
+                  alt=''
+                />
+                <div className='shops-card-info'>
+                  <span className='shops-card-info-title'>Lego</span>
+                  <div className='shops-card-info-images'>
+                    <Image
+                      className='shops-card-info-image'
+                      src='/media/shops/lego1.png'
+                      width={70}
+                      height={70}
+                      alt=''
+                    />
+                    <Image
+                      className='shops-card-info-image'
+                      src='/media/shops/lego2.png'
+                      width={70}
+                      height={70}
+                      alt=''
+                    />
+                    <Image
+                      className='shops-card-info-image'
+                      src='/media/shops/lego3.png'
+                      width={70}
+                      height={70}
+                      alt=''
+                    />
+                  </div>
+                  <span className='shops-card-info-text'>Ver tienda</span>
+                </div>
+              </div>
+              <div className='shops-card'>
+                <Image
+                  className='shops-card-banner'
+                  src='/media/shops/xiomibacck.png'
+                  width={340}
+                  height={95}
+                  alt='benefits'
+                />
+                <Image
+                  className='shops-card-logo'
+                  src='/media/shops/mi.png'
+                  width={80}
+                  height={80}
+                  alt=''
+                />
+                <div className='shops-card-info'>
+                  <span className='shops-card-info-title'>Xiaomi</span>
+                  <div className='shops-card-info-images'>
+                    <Image
+                      className='shops-card-info-image'
+                      src='/media/shops/xiomi1.png'
+                      width={70}
+                      height={70}
+                      alt=''
+                    />
+                    <Image
+                      className='shops-card-info-image'
+                      src='/media/shops/xiomi2.png'
+                      width={70}
+                      height={70}
+                      alt=''
+                    />
+                    <Image
+                      className='shops-card-info-image'
+                      src='/media/shops/xiomi3.png'
+                      width={70}
+                      height={70}
+                      alt=''
+                    />
+                  </div>
+                  <span className='shops-card-info-text'>Ver tienda</span>
+                </div>
+              </div>
+              <div className='shops-card'>
+                <Image
+                  className='shops-card-banner'
+                  src='/media/shops/osterback.png'
+                  width={340}
+                  height={95}
+                  alt='benefits'
+                />
+                <Image
+                  className='shops-card-logo'
+                  src='/media/shops/oster.png'
+                  width={80}
+                  height={80}
+                  alt=''
+                />
+                <div className='shops-card-info'>
+                  <span className='shops-card-info-title'>Oster</span>
+                  <div className='shops-card-info-images'>
+                    <Image
+                      className='shops-card-info-image'
+                      src='/media/shops/oster1.png'
+                      width={70}
+                      height={70}
+                      alt=''
+                    />
+                    <Image
+                      className='shops-card-info-image'
+                      src='/media/shops/oster2.png'
+                      width={70}
+                      height={70}
+                      alt=''
+                    />
+                    <Image
+                      className='shops-card-info-image'
+                      src='/media/shops/oster3.png'
+                      width={70}
+                      height={70}
+                      alt=''
+                    />
+                  </div>
+                  <span className='shops-card-info-text'>Ver tienda</span>
+                </div>
+              </div>
+              <div className='shops-card'>
+                <div className='shops-card-banner-nikon'></div>
+                <Image
+                  className='shops-card-logo'
+                  src='/media/shops/nikon.png'
+                  width={80}
+                  height={80}
+                  alt=''
+                />
+                <div className='shops-card-info'>
+                  <span className='shops-card-info-title'>Nikon</span>
+                  <div className='shops-card-info-images'>
+                    <Image
+                      className='shops-card-info-image'
+                      src='/media/shops/nikon1.png'
+                      width={70}
+                      height={70}
+                      alt=''
+                    />
+                    <Image
+                      className='shops-card-info-image'
+                      src='/media/shops/nikon2.png'
+                      width={70}
+                      height={70}
+                      alt=''
+                    />
+                    <Image
+                      className='shops-card-info-image'
+                      src='/media/shops/nikon3.png'
+                      width={70}
+                      height={70}
+                      alt=''
+                    />
+                  </div>
+                  <span className='shops-card-info-text'>Ver tienda</span>
+                </div>
+              </div>
+            </div>
+          </section>
           <section className='super'>
           <div className="texto-grande">
                 <span>Colecciones:</span>

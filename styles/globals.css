@@ -31,3 +31,110 @@ body{
 .enlace-prefooter{
     @apply cursor-pointer font-normal align-middle text-center text-link-prefooter-blue;
 }
+
+hr {
+    @apply border-t border-gray-300;
+  }
+  button {
+    @apply h-12 w-32 rounded-md bg-[#3483fa] text-base font-semibold leading-10 text-white;
+  }
+  
+  .sections-title {
+    @apply text-[26px] font-light leading-[26px] text-gray-600;
+  }
+  .sections-blue {
+    @apply text-lg font-normal leading-5 text-blue-500;
+  }
+  
+  .benefits-card {
+    @apply relative h-[250px] w-[384px]  rounded-md;
+  }
+  .benefits-image {
+    @apply left-0 top-0 rounded-md;
+  }
+  .benefits-info {
+    @apply relative  top-[126px] grid h-[124px] grid-cols-[112px,auto];
+  }
+  .benefits-info-description {
+    @apply ml-[22px] mr-0 mt-8 flex flex-col items-start  justify-center text-white;
+  }
+  .benefits-info-logo {
+    @apply mx-4 mb-4 mt-7;
+  }
+  .benefits-info-description-title {
+    @apply text-[22px] font-semibold leading-6;
+  }
+  .benefits-info-description-gift {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 16px;
+    @apply text-sm font-semibold leading-4;
+  }
+  .benefits-info-description-subtitle {
+    @apply text-xs font-normal leading-5;
+  }
+  
+  
+  .discover-card {
+    @apply flex flex-row h-[250px] w-[584px]  rounded-md bg-white shadow-md;
+  }
+  .discover-card-info {
+    @apply flex flex-col items-start py-14 pr-7 pl-8 text-gray-700;
+  }
+  .discover-card-info-title {
+    @apply flex flex-col font-semibold text-2xl leading-8 my-3;
+  }
+  .discover-card-info-text {
+    @apply font-semibold text-xs leading-3 uppercase tracking-[4px];
+  }
+  .discover-card-image {
+    border-radius: 4px;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  .shops-cards {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 1184px;
+    margin: 21px 0px 0px;
+    gap: 16px;
+  }
+  .shops-card {
+    @apply flex flex-col items-center relative w-[284px] rounded-md shadow-md;
+  }
+  .shops-card-banner {
+    @apply rounded-t-md;
+  }
+  .shops-card-banner-nikon {
+    @apply h-[95px] bg-gray-300 rounded-t-md;
+  }
+  .shops-card-logo {
+    @apply absolute top-[55px] rounded-md shadow-md opacity-90;
+  }
+  .shops-card-info {
+    @apply flex flex-col items-center h-[245px] w-[284px] py-14 pr-8 pl-5 rounded-b-md bg-white text-gray-700;
+  }
+  .shops-card-info-title {
+    @apply font-semibold text-2xl leading-7 text-gray-700;
+  }
+  .shops-card-info-images {
+    @apply flex flex-row items-center justify-center gap-2 my-5 mx-7;
+  }
+  .shops-card-info-image {
+    border-radius: 8px;
+    border: 1px solid #eeeeee;
+  }
+  .shops-card-info-text {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    color: #999999;
+  }
+  
