@@ -54,10 +54,9 @@ const indexPage = () => {
           <ShopSection/>
           <SupermarketSection/>
           <CategoriesSection/>
-          <footer>
-            <Prefooter/>
-            <Footer/>
-          </footer>
+          <Prefooter/>
+          <Footer/>
+
         </>
       </Layout>
     </> 
