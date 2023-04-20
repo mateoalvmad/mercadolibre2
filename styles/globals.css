@@ -40,7 +40,7 @@ hr {
   }
   
   .sections-title {
-    @apply text-[26px] font-light leading-[26px] text-gray-600;
+    @apply text-[25px] font-light leading-[26px] text-section-title;
   }
   .sections-blue {
     @apply text-lg font-normal leading-5 text-blue-500;
