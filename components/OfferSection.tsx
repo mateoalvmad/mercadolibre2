@@ -4,6 +4,8 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { OffersCard } from './OffersCard';
+import PrevArrow from './PrevArrow';
+import NextArrow from './NextArrow';
 
 const offersInfo = {
   offers: [
@@ -95,15 +97,15 @@ const offersInfo = {
     },
     {
       name: 'card6',
-      image: '/media/card1.png',
-      price: '$210.900',
+      image: '/media/item1-1.png',
+      price: '$119.900',
       discount: '32% OFF',
       delivery: 'Envío gratis',
     },
     {
       name: 'card7',
-      image: '/media/card2.png',
-      price: '$74.990',
+      image: '/media/item3-2.png',
+      price: '$34.990',
       discount: '25% OFF',
       delivery: 'Envío gratis',
       children: (
@@ -135,21 +137,21 @@ const offersInfo = {
     },
     {
       name: 'card8',
-      image: '/media/card3.png',
-      price: '$134.950',
+      image: '/media/item2-1.png',
+      price: '$63.950',
       discount: '50% OFF',
       delivery: 'Envío gratis',
     },
     {
       name: 'card9',
-      image: '/media/card4.png',
-      price: '$149.900',
+      image: '/media/item3-1.png',
+      price: '$159.900',
       discount: '30% OFF',
       delivery: 'Envío gratis',
     },
     {
       name: 'card10',
-      image: '/media/card5.png',
+      image: '/media/item2-2.png',
       price: '$69.990',
       discount: '17% OFF',
       children: (
@@ -178,45 +180,48 @@ const offersInfo = {
           </defs>
         </svg>
       ),
-    }, 
+    },
+  ],
+};
+const settings = {
+  arrows: true,
+  infinite: true,
+  speed: 500,
+  slidesToShow: 5,
+  slidesToScroll: 1,
+  prevArrow: <PrevArrow />,
+  nextArrow: <NextArrow />,
+  responsive: [
+    {
+      breakpoint: 1300,
+      settings: {
+        slidesToShow: 4,
+      },
+    },
+    {
+      breakpoint: 1050,
+      settings: {
+        slidesToShow: 3,
+      },
+    },
+    {
+      breakpoint: 840,
+      settings: {
+        slidesToShow: 2,
+      },
+    },
+    {
+      breakpoint: 620,
+      settings: {
+        slidesToShow: 1,
+      },
+    },
   ],
 };
 
 const OfferSection = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
-  const settings = {
-    arrows: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 5,
-    slidesToScroll: 1,
-    responsive: [
-      {
-        breakpoint: 1300,
-        settings: {
-          slidesToShow: 4,
-        },
-      },
-      {
-        breakpoint: 1050,
-        settings: {
-          slidesToShow: 3,
-        },
-      },
-      {
-        breakpoint: 840,
-        settings: {
-          slidesToShow: 2,
-        },
-      },
-      {
-        breakpoint: 620,
-        settings: {
-          slidesToShow: 1,
-        },
-      }
-    ],
-  };
+  
 
   return (
     <section className='w-full bg-section-color'>
@@ -230,8 +235,7 @@ const OfferSection = () => {
           </span>
         </div>
       </div>
-
-      <div className='debug mx-20 gap-4'>
+      <div className='mx-[181px] '>
         <Slider {...settings}>
           {offersInfo.offers.map((offers, index) => {
             return (
@@ -253,4 +257,3 @@ const OfferSection = () => {
 };
 
 export { OfferSection };
-
