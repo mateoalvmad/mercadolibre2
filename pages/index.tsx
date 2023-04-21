@@ -43,7 +43,7 @@ const indexPage = () => {
           <PosterSection/> 
           <OfferSection/> 
            <section className='flex h-[340px] w-full flex-col rounded bg-white'>
-            <div className='grid-cols-[1024px 3px 154px] grid h-[87px] w-full rounded-t-md bg-gradient-to-r from-[#a90f90] to-[#0c1a51]'>
+            <div className='grid-cols-[1024px 3px 154px] grid h-[87px] w-full rounded-t-md bg-gradient-to-r from-[#a90f90] to-[#0c1a51] '>
               <span className='pb-6  pl-0 pl-6 pt-6 text-2xl font-medium text-white'>
                 Suscríbete al nivel 6
               </span>
