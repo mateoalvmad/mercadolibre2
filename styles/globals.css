@@ -23,13 +23,13 @@ body{
     @apply pt-16 pl-40 flex align-middle font-normal items-center text-2xl gap-4 text-gray-500;
 }
 .titulo-prefooter{
-    @apply text-gray-950 text-lg font-medium;
+    @apply text-gray-950 text-lg font-medium items-center pt-[24.86px];
 }
 .contenido-prefooter{
-    @apply grid  gap-3 text-gray-500 justify-center align-middle w-4/12 text-center justify-items-center;
+    @apply grid w-[398px] text-gray-500  align-middle text-center justify-items-center;
 }
 .enlace-prefooter{
-    @apply cursor-pointer font-normal align-middle text-center text-link-prefooter-blue;
+    @apply cursor-pointer font-normal pt-[9px] text-center text-link-prefooter-blue;
 }
 
 hr {
@@ -40,7 +40,7 @@ hr {
   }
   
   .sections-title {
-    @apply text-[26px] font-light leading-[26px] text-gray-600;
+    @apply text-[25px] font-light leading-[26px] text-section-title;
   }
   .sections-blue {
     @apply text-lg font-normal leading-5 text-blue-500;
@@ -62,16 +62,13 @@ hr {
     @apply mx-4 mb-4 mt-7;
   }
   .benefits-info-description-title {
-    @apply text-[22px] font-semibold leading-6;
+    @apply flex text-[22px] font-semibold leading-6 text-white;
   }
-  .benefits-info-description-gift {
-    font-weight: 600;
-    font-size: 11px;
-    line-height: 16px;
-    @apply text-sm font-semibold leading-4;
+  .benefits-info-description-trial {
+    @apply text-sm font-semibold leading-4 text-white;
   }
   .benefits-info-description-subtitle {
-    @apply text-xs font-normal leading-5;
+    @apply text-xs font-normal leading-5 pt-[50px] text-white;
   }
   
   

@@ -27,6 +27,7 @@ module.exports = {
         'background-index':'#666666',
         'category-color':'#EAE6E6',
         'mcgray': '#ebebeb',
+        'footer-text':'#999999',
       },
       spacing: {
         'psections': '10.25rem',
