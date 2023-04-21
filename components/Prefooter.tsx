@@ -1,6 +1,6 @@
 const Prefooter = () => {
     return (
-      <div className="flex justify-center align-items-center justify-items-center align-middle pl-40 pr-40 pt-16 pb-16 gap-10 bg-white">
+      <div className="flex justify-center pl-40 pr-40 pt-16 pb-16 gap-10 bg-white">
         <div className="w-[1180px] flex">
           <div className="contenido-prefooter">
               <svg width="66" height="46" viewBox="0 0 66 46" fill="none" xmlns="http://www.w3.org/2000/svg">

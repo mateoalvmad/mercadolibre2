@@ -42,23 +42,23 @@ const indexPage = () => {
     <>
       <Head>
         <title>Mercadolibre</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+        <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
       </Head>
       <Layout>
         <>
-          <PosterSection/> 
-          <OfferSection/> 
-          <SubscriptionSection/>
-          <BenefitsSection/>
-          <DiscoverSection/>
-          <ShopSection/>
-          <SupermarketSection/>
-          <CategoriesSection/>
-          <Prefooter/>
-          <Footer/>
-
+        <PosterSection/>
+        <OfferSection/>
+        <SubscriptionSection/>
+        <BenefitsSection/>
+        <DiscoverSection/>
+        <ShopSection/>
+        <SupermarketSection/>
+        <CategoriesSection/>
+        <Prefooter/>
         </>
       </Layout>
+      <Footer/>
+  
     </> 
   )
 }

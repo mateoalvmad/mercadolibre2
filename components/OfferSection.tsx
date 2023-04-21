@@ -64,7 +64,7 @@ const offersInfo = {
 
 const OfferSection = () => {
   return (
-    <section className="w-full bg-section-color">
+    <section className="w-full">
       <div className="flex w-full gap-4 justify-center pt-12 pb-5">
         <div className="w-[1180px]">
           <span className="text-2xl font-light text-section-title">Ofertas</span> 

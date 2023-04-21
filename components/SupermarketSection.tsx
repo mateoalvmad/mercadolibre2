@@ -24,7 +24,7 @@ const items ={
 
 const SupermarketSection = () => {
   return (
-    <section className='w-full bg-section-color'>
+    <section className='w-full'>
       <div className='flex justify-center gap-4 pt-[108.81px] pb-[21.19px]'>
         <div className="flex w-[1180px]">
           <span className='text-2xl font-light text-section-title pr-2'>Colecciones:</span>

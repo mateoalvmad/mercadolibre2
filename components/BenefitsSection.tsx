@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 const BenefitsSection = () => {
   return (
-    <section className="w-full bg-section-color">
+    <section className="w-full">
       <div className="flex justify-center gap-6 pt-[80px] pb-5">
         <div className="w-[1180px]">
           <span className="text-2xl font-light text-section-title">Beneficios de Mercado Puntos</span>

@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 const SubscriptionSection = () => {
   return (
-    <section className='w-full bg-section-color'>
+    <section className='w-full'>
       <div className="flex justify-center pt-14">
         <div className="flex justify-between w-[1180px] h-[87px] rounded-t-md bg-gradient-to-r from-[#a90f90] to-[#0c1a51]">
           <span className="text-2xl font-medium text-white pt-7 pr-7 pb-6 pl-6">Suscríbete al nivel 6</span>

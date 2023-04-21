@@ -4,6 +4,7 @@ module.exports = {
     './pages/**/*.{js,ts,jsx,tsx}',
     './components/**/*.{js,ts,jsx,tsx}',
     './app/**/*.{js,ts,jsx,tsx}',
+    './layouts/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
     extend: {
@@ -18,10 +19,9 @@ module.exports = {
         'card-green': '#00a650',
         'section-title': '#666666',
         'section-subtitle': '#3483fa',
-        'input-text': '#cecccc',
         'buttons': '#00000040',
-        'yellow-color': '#FFF159',
-        'section-color': '#EBEBEB',
+        'header-background': '#FFF159',
+        'section-background': '#EBEBEB',
         'footer-text-black':'#333333',
         'link-prefooter-blue':'#3483FA',
         'background-index':'#666666',
