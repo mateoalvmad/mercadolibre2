@@ -14,6 +14,7 @@ const OffersCard = ({name, image, price, discount, delivery, children}:OffersCar
   return (
     <div className="flex flex-col px-4 pt-5 w-[224px] h-[350px] gap-1 bg-white rounded-sm hover:cursor-pointer hover:scale-105">
       <Image src={image} alt={name} width={224} height={224}/>
+      <hr/>
       <div className= "pt-1">
         <span className="text-2xl font-normal pr-3 text-section-black">{price}</span>
         <span className="text-sm font-normal text-card-green">{discount}</span> 
