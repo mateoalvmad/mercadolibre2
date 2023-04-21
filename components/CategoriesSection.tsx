@@ -3,7 +3,7 @@ import {Categories} from '@/components/Categories'
 
 const CategoriesSection = () => {
   return (
-    <section className='w-full bg-section-color'>
+    <section className='w-full'>
       <div className='flex justify-center pt-[75px] pb-[19.19px]'>
         <div className="w-[1180px]">
           <span className='text-2xl font-light text-section-title pr-2'>Categorías populares</span>

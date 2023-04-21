@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 const Header = () => {
   return (
-    <header className='w-full h-[100px] pt-2.5 bg-yellow-color'>
+    <header className='debug hidden md:block w-full h-[100px] pt-2.5 bg-header-background'>
     	<div className="flex justify-center">
       	<div className="flex w-[1180px] gap-12">
           <Image src={"/media/logo-mercadolibre.png"} alt={"Logo de mercadolibre"} width={134} height={34}/>
@@ -43,5 +43,6 @@ const Header = () => {
     </header>
   )
 }
-
 export {Header}
+
+

@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 const ShopSection = () => {
   return (
-    <section className='w-full bg-section-color'>
+    <section className=''>
       <div className='flex justify-center gap-5 pt-[54.81px] pb-[21.19px]'>
         <div className='w-[1180px]'>
           <span className='text-2xl font-light text-section-title'>Las mejores tiendas te esperan</span>

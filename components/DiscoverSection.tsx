@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 const DiscoverSection = () => {
   return (
-    <section className="w-full bg-section-color">
+    <section className="w-full">
       <div className="flex justify-center pt-[93.13px] pb-[19.19px]">
         <div className="w-[1180px]">
           <span className='sections-title'>Descubre</span>

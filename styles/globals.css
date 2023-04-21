@@ -7,15 +7,17 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Roboto, 'sans-serif';
+    border-collapse: collapse;
 }
 
 .debug {
     border: 1px solid red;
 }
 
-body{
-    background-color:#EBEBEB;
+header {
+  @apply max-w-full
 }
+
 .letter-spacing-descubre{
     letter-spacing: 4px;
 }
