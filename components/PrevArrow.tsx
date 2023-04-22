@@ -4,7 +4,7 @@ const PrevArrow = ({ onClick }: any) => {
   return (
       <div >
         <svg
-        className='absolute h-[117] w-[117] z-10 top-1/4 -left-16 cursor-pointer' onClick={onClick}
+        className='absolute h-[117] w-[117] z-10 top-1/4 -left-16 cursor-pointer hover:scale-110' onClick={onClick}
           width='117'
           height='117'
           viewBox='0 0 117 117'

@@ -224,7 +224,7 @@ const OfferSection = () => {
   
 
   return (
-    <section className='w-full bg-section-color'>
+    <section className='w-full'>
       <div className='flex w-full justify-center gap-4 pb-5 pt-12'>
         <div className='w-[1180px]'>
           <span className='text-2xl font-light text-section-title'>
@@ -235,23 +235,26 @@ const OfferSection = () => {
           </span>
         </div>
       </div>
-      <div className='mx-[181px] '>
-        <Slider {...settings}>
-          {offersInfo.offers.map((offers, index) => {
-            return (
-              <OffersCard
-                key={index}
-                name={offers.name}
-                image={offers.image}
-                price={offers.price}
-                discount={offers.discount}
-                delivery={offers.delivery}
-                children={offers.children}
-              />
-            );
-          })}
-        </Slider>
+      <div className='flex justify-center'>
+          <div className='w-[1180px]'>
+          <Slider {...settings}>
+            {offersInfo.offers.map((offers, index) => {
+              return (
+                <OffersCard
+                  key={index}
+                  name={offers.name}
+                  image={offers.image}
+                  price={offers.price}
+                  discount={offers.discount}
+                  delivery={offers.delivery}
+                  children={offers.children}
+                />
+              );
+            })}
+          </Slider>
+        </div>
       </div>
+      
     </section>
   );
 };

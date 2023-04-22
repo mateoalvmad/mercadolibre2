@@ -91,7 +91,7 @@ const paymentInfo = {
 
 const PosterSection = () => {
   return (
-    <section className="w-full bg-section-color">
+    <section className="w-full">
       <div className="flex bg-[url('/media/poster.png')] bg-cover h-[340px] justify-center items-end" >
         <div className="flex gap-2 pb-4">
           <div className="w-[6px] h-[6px] bg-buttons shadow shadow-white rounded-sm"></div>

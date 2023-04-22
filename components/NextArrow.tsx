@@ -2,7 +2,7 @@ import React from 'react';
 
 const NextArrow = ({ onClick }: any) => {
   return (
-      <div className='absolute h-[117] w-[117] top-1/4 -right-16 cursor-pointer' onClick={onClick}>
+      <div className='absolute h-[117] w-[117] top-1/4 -right-16 cursor-pointer hover:scale-110' onClick={onClick}>
         <svg
           width='117'
           height='117'
