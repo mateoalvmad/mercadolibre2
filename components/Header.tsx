@@ -1,10 +1,18 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Image from 'next/image'
 import {MdShoppingCart} from 'react-icons/md'
+import { ModalCart } from './modals/ModalCart';
+import { useCartContext } from '@/context/cartContext';
+
+
 
 const Header = () => {
+  const {itemsCount,openModalCart,setOpenModalCart}= useCartContext()
+  useEffect(()=>{
+    console.log(itemsCount)
+  },[itemsCount])
   return (
-    <header className='debug hidden md:block w-full h-[100px] pt-2.5 bg-header-background'>
+    <header className='hidden md:block w-full h-[100px] pt-2.5 bg-header-background'>
     	<div className="flex justify-center">
       	<div className="flex w-[1180px] gap-12">
           <Image src={"/media/logo-mercadolibre.png"} alt={"Logo de mercadolibre"} width={134} height={34}/>
@@ -29,13 +37,18 @@ const Header = () => {
         <span className="text-xs font-normal text-categories-black pl-4">Vender</span>
         <span className="text-xs font-normal text-categories-black pl-4">Ayuda / PQR</span>
         <span className="text-xs font-normal text-section-black pr-16 pl-56">Crea tu cuenta Ingresa Mis compras</span>  
-        <button   type="button" className="text-black w-8 h-10 pb-14 text-2xl" >
-        <MdShoppingCart/>        
+        <button  onClick={()=>setOpenModalCart(true)} type="button" className="text-black w-8 h-10 pb-14 text-2xl" >
+          <div className='flex'><span className="text-xs">{itemsCount}</span>
+          <MdShoppingCart/> 
+        </div>        
         </button>
       </div>
+      <ModalCart open={openModalCart} setOpen={setOpenModalCart} modalTitle='Articulos seleccionados'>
+          <div>
+          <span>asdasdasdasd</span>
+            </div>        
+      </ModalCart>
     </header>
   )
 }
-export {Header}
-
-
+export {Header} 

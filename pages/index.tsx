@@ -15,6 +15,7 @@ import { Layout } from '@/layouts/Layout'
 import Head from 'next/head'
 import React from 'react'
 import Image from 'next/image';
+import { CartContextProvider } from '@/context/cartContext'
 
 const items ={
   itemsCol: [
@@ -44,7 +45,7 @@ const indexPage = () => {
         <title>Mercadolibre</title>
         <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
       </Head>
-      <Layout>
+      <CartContextProvider><Layout>
         <>
         <PosterSection/>
         <OfferSection/>
@@ -56,7 +57,7 @@ const indexPage = () => {
         <CategoriesSection/>
         <Prefooter/>
         </>
-      </Layout>
+      </Layout></CartContextProvider>
       <Footer/>
   
     </> 
