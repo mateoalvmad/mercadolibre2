@@ -5,13 +5,13 @@ const CategoriesSection = () => {
   return (
     <section className='w-full'>
       <div className='flex justify-center pt-[75px] pb-[19.19px]'>
-        <div className="w-[1180px]">
+        <div className="md:w-[1180px]">
           <span className='text-2xl font-light text-section-title pr-2'>Categorías populares</span>
         </div>
       </div> 
       <div className="flex flex-col pb-[17.62px]">
         <div className="flex justify-center">
-          <div className='flex w-[1180px] gap-0.5'>
+          <div className='flex flex-wrap md:w-[1190px] w-[340px] gap-0.5'>
             <Categories categorie="Carros, Motos y Otros">
               <svg width="49" height="49" viewBox="0 0 49 49" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M42.5 20.375L40.731 7.111C40.599 6.117 39.751 5.375 38.749 5.375H10.251C9.249 5.375 8.401 6.117 8.269 7.111L6.5 20.375" stroke="#3483FA" stroke-miterlimit="10"/>
@@ -115,10 +115,6 @@ const CategoriesSection = () => {
                 </defs>
               </svg>
             </Categories>
-          </div>
-        </div>
-        <div className="flex justify-center">
-          <div className='flex w-[1180px] gap-0.5 pt-0.5'>
             <Categories categorie="Celulares y Teléfonos">
               <svg width="49" height="49" viewBox="0 0 49 49" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_1_451)">

@@ -1,71 +1,132 @@
-import React from 'react'
-import Image from 'next/image'
+import React from 'react';
+import Image from 'next/image';
+import ShopsCards from './ShopsCards';
+import 'react-multi-carousel/lib/styles.css';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+
+const shopsInfo = {
+  shops: [
+    {
+      banner: '/media/shops/legoback.png',
+      logo: '/media/shops/lego.png',
+      title: 'Lego',
+      images: [
+        '/media/shops/lego1.png',
+        '/media/shops/lego2.png',
+        '/media/shops/lego3.png',
+      ],
+      children: (
+        <Image
+          src={'/media/shops/legoback.png'}
+          alt={'benefits'}
+          width={340}
+          height={95}
+          className='rounded-t-md'
+        />
+      ),
+    },
+    {
+      logo: '/media/shops/mi.png',
+      title: 'Xiaomi',
+      images: [
+        '/media/shops/xiomi1.png',
+        '/media/shops/xiomi2.png',
+        '/media/shops/xiomi3.png',
+      ],
+      children: (
+        <Image
+          src={'/media/shops/xiomibacck.png'}
+          alt={'benefits'}
+          width={340}
+          height={95}
+          className='rounded-t-md'
+        />
+      ),
+    },
+    {
+      logo: '/media/shops/oster.png',
+      title: 'Oster',
+      images: [
+        '/media/shops/oster1.png',
+        '/media/shops/oster2.png',
+        '/media/shops/oster3.png',
+      ],
+      children: (
+        <Image
+          src={'/media/shops/osterback.png'}
+          alt={'benefits'}
+          width={340}
+          height={95}
+          className='rounded-t-md'
+        />
+      ),
+    },
+    {
+      banner: '',
+      logo: '/media/shops/nikon.png',
+      title: 'Nikon',
+      images: [
+        '/media/shops/nikon1.png',
+        '/media/shops/nikon2.png',
+        '/media/shops/nikon3.png',
+      ],
+      children: <div className='h-[95px] rounded-t-md bg-gray-300'></div>,
+    },
+  ],
+};
+
+const settings = {
+  arrows: false,
+  infinite: true,
+  speed: 500,
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  responsive: [
+    {
+      breakpoint: 1050,
+      settings: {
+        slidesToShow: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+      },
+    },
+  ],
+};
 
 const ShopSection = () => {
   return (
-    <section className=''>
-      <div className='flex justify-center gap-5 pt-[54.81px] pb-[21.19px]'>
-        <div className='w-[1180px]'>
-          <span className='text-2xl font-light text-section-title'>Las mejores tiendas te esperan</span>
-          <span className='text-sm font-normal text-section-subtitle pt-2 pl-4'>Ver tiendas</span>
-        </div>
-      </div> 
-      <div className="flex justify-center gap-4">
-        <div className='shops-card'>
-          <Image src={"/media/shops/legoback.png"} alt={"benefits"} width={340} height={95} className="shops-card-banner"/>
-          <Image src={"/media/shops/lego.png"} alt={""} width={80} height={80} className="shops-card-logo"/>
-          <div className='shops-card-info'>
-            <span className='shops-card-info-title'>Lego</span>
-            <div className='shops-card-info-images'>
-              <Image src={"/media/shops/lego1.png"} alt={""} width={70} height={70} className="shops-card-info-image"/>
-              <Image src={"/media/shops/lego2.png"} alt={""} width={70} height={70} className="shops-card-info-image"/>    
-              <Image src={"/media/shops/lego3.png"} alt={""} width={70} height={70} className="shops-card-info-image"/>
-            </div>
-             <span className='shops-card-info-text'>Ver tienda</span>
-          </div>
-        </div>
-        <div className='shops-card'>
-          <Image src={"/media/shops/xiomibacck.png"} alt={"benefits"} width={340} height={95} className="shops-card-banner"/>
-          <Image src={"/media/shops/mi.png"} alt={""} width={80} height={80} className="shops-card-logo"/>
-          <div className='shops-card-info'>
-            <span className='shops-card-info-title'>Xiaomi</span>
-            <div className='shops-card-info-images'>
-              <Image src={"/media/shops/xiomi1.png"} alt={""} width={70} height={70} className="shops-card-info-image"/>
-              <Image src={"/media/shops/xiomi2.png"} alt={""} width={70} height={70} className="shops-card-info-image"/>    
-              <Image src={"/media/shops/xiomi3.png"} alt={""} width={70} height={70} className="shops-card-info-image"/>
-            </div>
-            <span className='shops-card-info-text'>Ver tienda</span>
-          </div>
-        </div>
-        <div className='shops-card'>
-          <Image src={"/media/shops/osterback.png"} alt={"benefits"} width={340} height={95} className="shops-card-banner"/>
-          <Image src={"/media/shops/oster.png"} alt={""} width={80} height={80} className="shops-card-logo"/>      
-          <div className='shops-card-info'>
-            <span className='shops-card-info-title'>Oster</span>
-            <div className='shops-card-info-images'>
-              <Image src={"/media/shops/oster1.png"} alt={""} width={70} height={70} className="shops-card-info-image"/>
-              <Image src={"/media/shops/oster2.png"} alt={""} width={70} height={70} className="shops-card-info-image"/>
-              <Image src={"/media/shops/oster3.png"} alt={""} width={70} height={70} className="shops-card-info-image"/>
-            </div>
-            <span className='shops-card-info-text'>Ver tienda</span>
-          </div>
-        </div>
-        <div className='shops-card'>
-          <div className='shops-card-banner-nikon'></div>
-            <Image src={"/media/shops/nikon.png"} alt={""} width={80} height={80} className="shops-card-logo"/>
-            <div className='shops-card-info'>
-              <span className='shops-card-info-title'>Nikon</span>
-              <div className='shops-card-info-images'>
-                <Image src={"/media/shops/nikon1.png"} alt={""} width={70} height={70} className="shops-card-info-image"/>
-                <Image src={"/media/shops/nikon2.png"} alt={""} width={70} height={70} className="shops-card-info-image"/>
-                <Image src={"/media/shops/nikon3.png"} alt={""} width={70} height={70} className="shops-card-info-image"/>  
-              </div>
-              <span className='shops-card-info-text'>Ver tienda</span>
-          </div>
+    <section>
+      <div className='flex justify-center gap-5 pb-[21.19px] pt-[54.81px]'>
+        <div className='flex md:flex-row flex-col md:w-[1180px]'>
+          <span className='text-2xl font-light text-section-title'>
+            Las mejores tiendas te esperan
+          </span>
+          <span className='pl-4 pt-2 text-sm font-normal text-section-subtitle'>
+            Ver tiendas
+          </span>
         </div>
       </div>
-  </section>
-  )
-}
+      <div className='flex justify-center'>
+        <div className='md:w-[1180px] w-[284px] gap-4'>
+          <Slider {...settings}>
+            {shopsInfo.shops.map((shops, index) => {
+              return (
+                <ShopsCards
+                  logo={shops.logo}
+                  title={shops.title}
+                  images={shops.images}
+                  children={shops.children}
+                />
+              );
+            })}
+          </Slider>
+        </div>
+      </div>
+        
+    </section>
+  );
+};
 
-export {ShopSection}
+export { ShopSection };
