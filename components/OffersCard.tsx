@@ -12,7 +12,7 @@ interface OffersCardProps {
 
 const OffersCard = ({name, image, price, discount, delivery, children}:OffersCardProps) => {
   return (
-    <div className="flex flex-col px-4 pt-5 w-[224px] h-[350px] gap-1 bg-white rounded-sm hover:cursor-pointer hover:scale-105">
+    <div className="flex flex-col px-4 pt-5 w-[250px] md:w-[224px] h-[350px] gap-1 bg-white rounded-sm hover:cursor-pointer hover:scale-105">
       <Image src={image} alt={name} width={224} height={224}/>
       <hr/>
       <div className= "pt-1">
@@ -28,3 +28,4 @@ const OffersCard = ({name, image, price, discount, delivery, children}:OffersCar
 }
 
 export {OffersCard}
+

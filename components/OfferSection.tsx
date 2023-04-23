@@ -3,7 +3,7 @@ import 'react-multi-carousel/lib/styles.css';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import { OffersCard } from './OffersCard';
+import { OffersCard} from './OffersCard';
 import PrevArrow from './PrevArrow';
 import NextArrow from './NextArrow';
 
@@ -219,12 +219,13 @@ const settings = {
   ],
 };
 
+
 const OfferSection = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   
 
   return (
-    <section className='w-full'>
+    <section className='hidden md:block w-full'>
       <div className='flex w-full justify-center gap-4 pb-5 pt-12'>
         <div className='md:w-[1180px]'>
           <span className='text-2xl font-light text-section-title'>
@@ -260,3 +261,81 @@ const OfferSection = () => {
 };
 
 export { OfferSection };
+
+const settingsMovil = {
+  arrows: true,
+  infinite: true,
+  speed: 500,
+  slidesToShow: 5,
+  slidesToScroll: 1,
+  prevArrow: <PrevArrow />,
+  nextArrow: <NextArrow />,
+  responsive: [
+    {
+      breakpoint: 1300,
+      settings: {
+        slidesToShow: 1,
+      },
+    },
+    {
+      breakpoint: 1050,
+      settings: {
+        slidesToShow: 1,
+      },
+    },
+    {
+      breakpoint: 840,
+      settings: {
+        slidesToShow: 1,
+      },
+    },
+    {
+      breakpoint: 620,
+      settings: {
+        slidesToShow: 1,
+      },
+    },
+  ],
+};
+
+const OfferSectionMovil = () => {
+  const [currentSlide, setCurrentSlide] = useState(0);
+  
+
+  return (
+    <section className='md:hidden w-full'>
+      <div className='flex justify-center gap-4 pb-5 pt-12'>
+        <div>
+          <span className='text-2xl font-light text-section-title'>
+            Ofertas
+          </span>
+          <span className='pl-4 pt-1.5 text-sm font-normal text-section-subtitle'>
+            Ver todas
+          </span>
+        </div>
+      </div>
+      <div className='flex justify-center'>
+          <div className='w-[284px]'>
+          <Slider {...settingsMovil}>
+            {offersInfo.offers.map((offers, index) => {
+              return (
+                <OffersCard
+                  key={index}
+                  name={offers.name}
+                  image={offers.image}
+                  price={offers.price}
+                  discount={offers.discount}
+                  delivery={offers.delivery}
+                  children={offers.children}
+                />
+              );
+            })}
+          </Slider>
+        </div>
+      </div>
+      
+    </section>
+  );
+};
+
+export { OfferSectionMovil };

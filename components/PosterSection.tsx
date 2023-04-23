@@ -1,5 +1,6 @@
 import React from 'react'
 import { PaymentSection} from './PaymentSection'
+import Image from 'next/image'
 
 const paymentInfo = {
   payments: [
@@ -92,7 +93,7 @@ const paymentInfo = {
 const PosterSection = () => {
   return (
     <section className="w-full">
-      <div className="flex bg-[url('/media/poster.png')] bg-cover h-[340px] justify-center items-end" >
+      <div className="flex bg-[url('/media/poster.png')] bg-auto h-[340px] justify-center items-end" >
         <div className="flex gap-2 pb-4">
           <div className="w-[6px] h-[6px] bg-buttons shadow shadow-white rounded-sm"></div>
           <div className="w-[6px] h-[6px] bg-white shadow shadow-buttons rounded-sm"></div>
@@ -103,7 +104,7 @@ const PosterSection = () => {
         </div>          
       </div>
       <div className="flex justify-center pt-10">
-        <div className="flex flex-row justify-around w-[1184px] h-[90px] bg-white rounded-xs shadow-[0_0px_1px_1px_rgba(0,0,0,0.1)]">
+        <div className="flex flex-col md:flex-row md:justify-around w-[450px] md:w-[1184px] md:h-[90px] bg-white rounded-xs shadow-[0_0px_1px_1px_rgba(0,0,0,0.1)]">
           {paymentInfo.payments.map((payments, index) => {
             return <PaymentSection key={index} children= {payments.children} title={payments.title} subtitle={payments.subtitle} />;
           })}
