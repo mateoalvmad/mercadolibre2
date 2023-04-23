@@ -262,7 +262,7 @@ const PosterSection = () => {
   return (
     <section className='w-full'>
       <div className=''>
-        <div className="flex md:w-full items-end justify-center bg-[url('/media/poster.png')] bg-auto bg-no-repeat bg-center overflow-auto h-[340px]  md:bg-cover">
+        <div className="flex h-[340px] items-end justify-center overflow-auto bg-[url('/media/poster.png')] bg-auto bg-center bg-no-repeat md:w-full  md:bg-cover">
           <div className='flex gap-2 pb-4 '>
             <div className='h-[6px] w-[6px] rounded-sm bg-buttons shadow shadow-white'></div>
             <div className='h-[6px] w-[6px] rounded-sm bg-white shadow shadow-buttons'></div>

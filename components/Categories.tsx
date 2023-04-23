@@ -1,14 +1,14 @@
-interface categories{
-    categorie:string;
-    children:JSX.Element;
+interface categories {
+  categorie: string;
+  children: JSX.Element;
 }
-const Categories = ({children, categorie}:categories) => {
-  return (        
-    <div className="h-40 w-40 bottom-40 bg-white rounded-sm border-solid border-category-color font-normal text-sm text-center grid justify-items-center align-center items-center justify-center text-gray-800 p-5">                        
+const Categories = ({ children, categorie }: categories) => {
+  return (
+    <div className='align-center bottom-40 grid h-40 w-40 items-center justify-center justify-items-center rounded-sm border-solid border-category-color bg-white p-5 text-center text-sm font-normal text-gray-800'>
       {children}
       <span>{categorie}</span>
     </div>
-  )
-}
+  );
+};
 
-export  {Categories};
+export { Categories };

@@ -99,7 +99,7 @@ const ShopSection = () => {
   return (
     <section>
       <div className='flex justify-center gap-5 pb-[21.19px] pt-[54.81px]'>
-        <div className='flex md:flex-row flex-col md:w-[1180px]'>
+        <div className='flex flex-col md:w-[1180px] md:flex-row'>
           <span className='text-2xl font-light text-section-title'>
             Las mejores tiendas te esperan
           </span>
@@ -109,7 +109,7 @@ const ShopSection = () => {
         </div>
       </div>
       <div className='flex justify-center'>
-        <div className='md:w-[1180px] w-[284px] gap-4'>
+        <div className='w-[284px] gap-4 md:w-[1180px]'>
           <Slider {...settings}>
             {shopsInfo.shops.map((shops, index) => {
               return (
@@ -124,7 +124,6 @@ const ShopSection = () => {
           </Slider>
         </div>
       </div>
-        
     </section>
   );
 };

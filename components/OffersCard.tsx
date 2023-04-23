@@ -1,5 +1,5 @@
-import React from 'react'
-import Image from 'next/image'
+import React from 'react';
+import Image from 'next/image';
 
 interface OffersCardProps {
   name: string;
@@ -10,22 +10,32 @@ interface OffersCardProps {
   children?: JSX.Element;
 }
 
-const OffersCard = ({name, image, price, discount, delivery, children}:OffersCardProps) => {
+const OffersCard = ({
+  name,
+  image,
+  price,
+  discount,
+  delivery,
+  children,
+}: OffersCardProps) => {
   return (
-    <div className="flex flex-col px-4 pt-5 w-[250px] md:w-[224px] h-[350px] gap-1 bg-white rounded-sm hover:cursor-pointer hover:scale-105">
-      <Image src={image} alt={name} width={224} height={224}/>
-      <hr/>
-      <div className= "pt-1">
-        <span className="text-2xl font-normal pr-3 text-section-black">{price}</span>
-        <span className="text-sm font-normal text-card-green">{discount}</span> 
+    <div className='flex h-[350px] w-[250px] flex-col gap-1 rounded-sm bg-white px-4 pt-5 hover:scale-105 hover:cursor-pointer md:w-[224px]'>
+      <Image src={image} alt={name} width={224} height={224} />
+      <hr />
+      <div className='pt-1'>
+        <span className='pr-3 text-2xl font-normal text-section-black'>
+          {price}
+        </span>
+        <span className='text-sm font-normal text-card-green'>{discount}</span>
       </div>
-      <div className= "flex pt-1.5">
-        <span className="text-xs font-semibold pt-1.5 pr-1.5 text-card-green">{delivery}</span>
+      <div className='flex pt-1.5'>
+        <span className='pr-1.5 pt-1.5 text-xs font-semibold text-card-green'>
+          {delivery}
+        </span>
         {children}
-      </div>  
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export {OffersCard}
-
+export { OffersCard };

@@ -26,7 +26,7 @@ const SupermarketSection = () => {
   return (
     <section className=''>
       <div className='flex justify-center gap-4 pb-[21.19px] pt-[108.81px] '>
-        <div className='flex justify-center md:justify-start md:w-[1180px]'>
+        <div className='flex justify-center md:w-[1180px] md:justify-start'>
           <span className='pr-2 text-2xl font-light text-section-title'>
             Colecciones:
           </span>

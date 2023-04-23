@@ -3,7 +3,7 @@ import 'react-multi-carousel/lib/styles.css';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import { OffersCard} from './OffersCard';
+import { OffersCard } from './OffersCard';
 import PrevArrow from './PrevArrow';
 import NextArrow from './NextArrow';
 
@@ -219,13 +219,11 @@ const settings = {
   ],
 };
 
-
 const OfferSection = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
-  
 
   return (
-    <section className='hidden md:block w-full'>
+    <section className='hidden w-full md:block'>
       <div className='flex w-full justify-center gap-4 pb-5 pt-12'>
         <div className='md:w-[1180px]'>
           <span className='text-2xl font-light text-section-title'>
@@ -237,7 +235,7 @@ const OfferSection = () => {
         </div>
       </div>
       <div className='flex justify-center'>
-          <div className='w-[1180px]'>
+        <div className='w-[1180px]'>
           <Slider {...settings}>
             {offersInfo.offers.map((offers, index) => {
               return (
@@ -255,7 +253,6 @@ const OfferSection = () => {
           </Slider>
         </div>
       </div>
-      
     </section>
   );
 };
@@ -300,10 +297,9 @@ const settingsMovil = {
 
 const OfferSectionMovil = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
-  
 
   return (
-    <section className='md:hidden w-full'>
+    <section className='w-full md:hidden'>
       <div className='flex justify-center gap-4 pb-5 pt-12'>
         <div>
           <span className='text-2xl font-light text-section-title'>
@@ -315,7 +311,7 @@ const OfferSectionMovil = () => {
         </div>
       </div>
       <div className='flex justify-center'>
-          <div className='w-[284px]'>
+        <div className='w-[284px]'>
           <Slider {...settingsMovil}>
             {offersInfo.offers.map((offers, index) => {
               return (
@@ -333,7 +329,6 @@ const OfferSectionMovil = () => {
           </Slider>
         </div>
       </div>
-      
     </section>
   );
 };

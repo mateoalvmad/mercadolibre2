@@ -2,7 +2,7 @@ const Footer = () => {
   return (
     <footer className='flex h-44 flex-col bg-white px-5 md:px-[166px]'>
       <div>
-        <div className='flex flex-row gap-5 flex-wrap justify-center  md:justify-start text-xs font-normal text-section-black '>
+        <div className='flex flex-row flex-wrap justify-center gap-5  text-xs font-normal text-section-black md:justify-start '>
           <span>Trabaja con nosotros</span>
           <span className=''>Términos y condiciones</span>
           <span className=''>Cómo cuidamos tu privacidad</span>
@@ -10,17 +10,17 @@ const Footer = () => {
           <span className=''>Ayuda / PQR</span>
           <span className=''>www.sic.gov.co</span>
         </div>
-        <div className='flex flex-col pt-[7px] pb-[14px] gap-1 items-center md:items-start text-xs font-normal text-footer-text '>
+        <div className='flex flex-col items-center gap-1 pb-[14px] pt-[7px] text-xs font-normal text-footer-text md:items-start '>
           <span>Copyright © 1999-2023 MercadoLibre Colombia LTDA.</span>
           <span>Carrera 17 Numero 93 - 09 Piso 3, Bogotá D.C., Colombia</span>
         </div>
       </div>
 
       <hr />
-      <div className='flex flex-row justify-center md:justify-start gap-5 p-4'>
-          <img src='/media/sic.png' alt='industria y comercio' />
-          <img src='/media/pum.png' alt='pare y compare' className='' />
-        </div>
+      <div className='flex flex-row justify-center gap-5 p-4 md:justify-start'>
+        <img src='/media/sic.png' alt='industria y comercio' />
+        <img src='/media/pum.png' alt='pare y compare' className='' />
+      </div>
     </footer>
   );
 };
