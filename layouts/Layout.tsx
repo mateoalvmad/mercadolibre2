@@ -1,4 +1,4 @@
-import { Header } from '@/components/Header'
+import { Header, HeaderMovil } from '@/components/Header'
 import React from 'react'
 import {Footer} from '@/components/Footer'
 
@@ -10,6 +10,7 @@ const Layout = ({children}:LayoutProps) => {
   return (
     <>
       <Header/>
+      <HeaderMovil/>
       <main className='flex flex-col h-full w-full bg-section-background overflow-hidden' >
         {children}
       </main>

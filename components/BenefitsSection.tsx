@@ -3,14 +3,14 @@ import Image from 'next/image'
 
 const BenefitsSection = () => {
   return (
-    <section className="w-full">
+    <section className="w-full bg-section-color">
       <div className="flex justify-center gap-6 pt-[80px] pb-5">
-        <div className="w-[1180px]">
+        <div className="w-[280px] md:w-[1180px]">
           <span className="text-2xl font-light text-section-title">Beneficios de Mercado Puntos</span>
           <span className="text-sm font-normal text-section-subtitle pt-2 pl-4">Ver todos los beneficios</span>
         </div> 
       </div>
-      <div className="flex justify-center gap-4">
+      <div className="flex flex-col items-center md:justify-center md:flex-row gap-4">
         <div className="w-[384px] h-[250px] rounded-md pt-[154px] pl-4 bg-[url('/media/benefits/card1.png')]">
           <div className="flex gap-4">
             <Image src={"/media/benefits/combo.png"} alt={"benefits"} width={80} height={80}/>

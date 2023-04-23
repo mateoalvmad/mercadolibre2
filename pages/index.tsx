@@ -1,8 +1,8 @@
 import {Header} from '@/components/Header'
-import { OfferSection } from '@/components/OfferSection'
-import { PosterSection } from '@/components/PosterSection'
-import { SubscriptionSection } from '@/components/SubscriptionSection'
-import { BenefitsSection } from '@/components/BenefitsSection'
+import { OfferSection, OfferSectionMovil } from '@/components/OfferSection'
+import { PosterSection} from '@/components/PosterSection'
+import { SubscriptionSection} from '@/components/SubscriptionSection'
+import { BenefitsSection} from '@/components/BenefitsSection'
 import { DiscoverSection } from '@/components/DiscoverSection'
 import { ShopSection } from '@/components/ShopSection'
 import { SupermarketSection } from '@/components/SupermarketSection'
@@ -48,6 +48,7 @@ const indexPage = () => {
         <>
         <PosterSection/>
         <OfferSection/>
+        <OfferSectionMovil/>
         <SubscriptionSection/>
         <BenefitsSection/>
         <DiscoverSection/>
