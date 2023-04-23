@@ -9,12 +9,9 @@ import { SupermarketSection } from '@/components/SupermarketSection'
 import { CategoriesSection } from '@/components/CategoriesSection'
 import {Footer} from '@/components/Footer'
 import { Prefooter } from '@/components/Prefooter'
-import {Categories} from '@/components/Categories'
-import { SupermarketCard } from '@/components/SupermarketCard'
 import { Layout } from '@/layouts/Layout'
 import Head from 'next/head'
 import React from 'react'
-import Image from 'next/image';
 
 const items ={
   itemsCol: [

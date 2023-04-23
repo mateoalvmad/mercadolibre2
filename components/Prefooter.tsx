@@ -1,7 +1,7 @@
 const Prefooter = () => {
     return (
       <div className="flex justify-center pl-40 pr-40 pt-16 pb-16 gap-10 bg-white">
-        <div className="w-[1180px] flex">
+        <div className="flex flex-col md:flex-row md:w-[1180px]">
           <div className="contenido-prefooter">
               <svg width="66" height="46" viewBox="0 0 66 46" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M0.910339 4.06598C0.910339 2.40786 2.28769 1.06348 3.98457 1.06348H61.941C63.6388 1.06348 65.0152 2.40341 65.0152 4.06598V41.2467C65.0152 42.9049 63.6379 44.2493 61.941 44.2493H3.98457C2.28678 44.2493 0.910339 42.9093 0.910339 41.2467V4.06598Z" fill="white"/>
@@ -27,7 +27,7 @@ const Prefooter = () => {
               <span className="w-[303px] pt-0.5">Con Mercado Pago, paga en cuotas y aprovecha la comodidad de financiación que te da tu banco, o hazlo con efectivo en puntos de pago. ¡Y siempre es seguro!</span>
               <span className="enlace-prefooter">Cómo pagar con Mercado Pago</span>
             </div>
-            <div className="self-center">
+            <div className="self-center md:visible invisible">
               <svg width="1" height="66" viewBox="0 0 1 66" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect y="0.5" width="1" height="65" fill="#E2E2E2"/>
               </svg>
@@ -55,7 +55,7 @@ const Prefooter = () => {
               <span className="w-[303px] h-[75px] pt-0.5">Con solo estar registrado en Mercado Libre, tienes envíos gratis en miles de productos seleccionados.</span>
               <span className="enlace-prefooter">Conoce más sobre este beneficio</span>
             </div>
-            <div className="self-center">
+            <div className="self-center md:visible invisible">
               <svg width="1" height="66" viewBox="0 0 1 66" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect y="0.5" width="1" height="65" fill="#E2E2E2"/>
               </svg> 
