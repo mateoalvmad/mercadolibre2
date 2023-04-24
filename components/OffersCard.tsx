@@ -5,7 +5,7 @@ import { CartContextProvider, useCartContext } from '@/context/cartContext';
 interface OffersCardProps {
   name: string;
   image: string;
-  price: string;
+  price: number;
   discount: string;
   delivery?: string;
   children?: JSX.Element;

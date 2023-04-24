@@ -1,10 +1,11 @@
 import { createContext,Dispatch,useContext, SetStateAction, useState, useReducer} from 'react';
 
 interface cartItems{
+    id:number;
     name:string;
     image:string;
     count:number;
-    price:string;
+    price:number;
 }
 interface CartContext {
     itemsCount:number;

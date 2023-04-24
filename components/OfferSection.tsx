@@ -7,20 +7,21 @@ import { OffersCard } from './OffersCard';
 import PrevArrow from './PrevArrow';
 import NextArrow from './NextArrow';
 import { useCartContext } from '@/context/cartContext';
+import { toast } from 'react-toastify';
 
 const offersInfo = {
   offers: [
     {
       name: 'card1',
       image: '/media/card1.png',
-      price: '$210.900',
+      price: 210900,
       discount: '32% OFF',
       delivery: 'Envío gratis',
     },
     {
       name: 'card2',
       image: '/media/card2.png',
-      price: '$74.990',
+      price: 74990,
       discount: '25% OFF',
       delivery: 'Envío gratis',
       children: (
@@ -53,21 +54,21 @@ const offersInfo = {
     {
       name: 'card3',
       image: '/media/card3.png',
-      price: '$134.950',
+      price: 134950,
       discount: '50% OFF',
       delivery: 'Envío gratis',
     },
     {
       name: 'card4',
       image: '/media/card4.png',
-      price: '$149.900',
+      price: 149900,
       discount: '30% OFF',
       delivery: 'Envío gratis',
     },
     {
       name: 'card5',
       image: '/media/card5.png',
-      price: '$69.990',
+      price: 69990,
       discount: '17% OFF',
       children: (
         <svg
@@ -99,14 +100,14 @@ const offersInfo = {
     {
       name: 'card6',
       image: '/media/item1-1.png',
-      price: '$119.900',
+      price: 119900,
       discount: '32% OFF',
       delivery: 'Envío gratis',
     },
     {
       name: 'card7',
       image: '/media/item3-2.png',
-      price: '$34.990',
+      price: 34990,
       discount: '25% OFF',
       delivery: 'Envío gratis',
       children: (
@@ -139,21 +140,21 @@ const offersInfo = {
     {
       name: 'card8',
       image: '/media/item2-1.png',
-      price: '$63.950',
+      price: 63950,
       discount: '50% OFF',
       delivery: 'Envío gratis',
     },
     {
       name: 'card9',
       image: '/media/item3-1.png',
-      price: '$159.900',
+      price: 159900,
       discount: '30% OFF',
       delivery: 'Envío gratis',
     },
     {
       name: 'card10',
       image: '/media/item2-2.png',
-      price: '$69.990',
+      price: 69990,
       discount: '17% OFF',
       children: (
         <svg
@@ -223,22 +224,41 @@ const settings = {
 const OfferSection = () => {
   const {cartItems,setCartItems}= useCartContext()
   const [currentSlide, setCurrentSlide] = useState(0);
-  const addItemCart=(name: string, img:string,price:string)=>{
+  
+
+  const addItemCart=(id:number,name: string, img:string,price:number)=>{
     
+
     const nuevoItem = {
+      id:id,
       name: name,
       image: img,
       count:1,
       price:price,
     };
-   /* cartItems.map((item, index) => {
-      if(item.name==nuevoItem.name){
+   /* cartItems.map((item) => {
+      if(item.id == nuevoItem.id){
         item.count=item.count+1;
         console.log(item.count)
+      }})*/
+    setCartItems([...cartItems, nuevoItem]) 
+    /*console.log(cartItems)
+    for (let i = 0; i < cartItems.length; i++) {
+      // Obtener el objeto en la posición i del array
+      const objetoActual = cartItems[i];
+    
+      // Verificar si el id del objeto ya existe en el array original
+      const existe = cartItems.some((obj, index) => obj.id === objetoActual.id && index !== i);
+    
+      // Si el id del objeto existe en el array original, eliminarlo
+      if (existe) {
+        cartItems.splice(i, 1); // Eliminar el objeto en la posición i
+        i--; // Disminuir el contador del bucle para evitar saltarse elementos
       }
-    })*/
-    setCartItems([...cartItems, nuevoItem])
+    }*/
+    toast.success("Agregado al carrito.")
   }
+
   return (
     <section className='w-full bg-section-color'>
       <div className='flex w-full justify-center gap-4 pb-5 pt-12'>
@@ -255,7 +275,7 @@ const OfferSection = () => {
         <Slider {...settings}>
           {offersInfo.offers.map((offers, index) => {
             return (
-              <div onClick={()=>addItemCart(offers.name, offers.image, offers.price)}>
+              <div onClick={()=>addItemCart(index,offers.name, offers.image, offers.price)}>
               <OffersCard 
                 key={index}
                 name={offers.name}
