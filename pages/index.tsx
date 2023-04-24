@@ -1,5 +1,5 @@
 import {Header} from '@/components/Header'
-import { OfferSection } from '@/components/OfferSection'
+import { OfferSection, OfferSectionMovil } from '@/components/OfferSection'
 import { PosterSection } from '@/components/PosterSection'
 import { SubscriptionSection } from '@/components/SubscriptionSection'
 import { BenefitsSection } from '@/components/BenefitsSection'
@@ -53,6 +53,7 @@ const indexPage = () => {
         <>
         <PosterSection/>
         <OfferSection/>
+        <OfferSectionMovil/>
         <SubscriptionSection/>
         <BenefitsSection/>
         <DiscoverSection/>

@@ -47,7 +47,7 @@ const successAlert=(index:number)=>{
             })}
             <div className="flex justify-center p-9 gap-7"> 
               <span className="text-xl text-gray-700" >El total es: </span>
-              <span className='text-xl text-black'>{total}</span> 
+              <span className='text-xl text-black'>${total}</span> 
             </div>
            
              </tbody>

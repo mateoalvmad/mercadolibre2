@@ -12,14 +12,14 @@ import { toast } from 'react-toastify';
 const offersInfo = {
   offers: [
     {
-      name: 'card1',
+      name: 'Silla',
       image: '/media/card1.png',
       price: 210900,
       discount: '32% OFF',
       delivery: 'Envío gratis',
     },
     {
-      name: 'card2',
+      name: 'Micrófono',
       image: '/media/card2.png',
       price: 74990,
       discount: '25% OFF',
@@ -52,21 +52,21 @@ const offersInfo = {
       ),
     },
     {
-      name: 'card3',
+      name: 'Máquina de afeitar',
       image: '/media/card3.png',
       price: 134950,
       discount: '50% OFF',
       delivery: 'Envío gratis',
     },
     {
-      name: 'card4',
+      name: 'Closet',
       image: '/media/card4.png',
       price: 149900,
       discount: '30% OFF',
       delivery: 'Envío gratis',
     },
     {
-      name: 'card5',
+      name: 'Cortina',
       image: '/media/card5.png',
       price: 69990,
       discount: '17% OFF',
@@ -98,14 +98,14 @@ const offersInfo = {
       ),
     },
     {
-      name: 'card6',
+      name: 'Crema contorno de ojos',
       image: '/media/item1-1.png',
       price: 119900,
       discount: '32% OFF',
       delivery: 'Envío gratis',
     },
     {
-      name: 'card7',
+      name: 'Crema humectante',
       image: '/media/item3-2.png',
       price: 34990,
       discount: '25% OFF',
@@ -138,21 +138,21 @@ const offersInfo = {
       ),
     },
     {
-      name: 'card8',
+      name: 'Cicatricure',
       image: '/media/item2-1.png',
       price: 63950,
       discount: '50% OFF',
       delivery: 'Envío gratis',
     },
     {
-      name: 'card9',
+      name: 'Crema Nivea',
       image: '/media/item3-1.png',
       price: 159900,
       discount: '30% OFF',
       delivery: 'Envío gratis',
     },
     {
-      name: 'card10',
+      name: 'Tequila',
       image: '/media/item2-2.png',
       price: 69990,
       discount: '17% OFF',
@@ -235,26 +235,7 @@ const OfferSection = () => {
       count:1,
       price:price,
     };
-   /* cartItems.map((item) => {
-      if(item.id == nuevoItem.id){
-        item.count=item.count+1;
-        console.log(item.count)
-      }})*/
     setCartItems([...cartItems, nuevoItem]) 
-    /*console.log(cartItems)
-    for (let i = 0; i < cartItems.length; i++) {
-      // Obtener el objeto en la posición i del array
-      const objetoActual = cartItems[i];
-    
-      // Verificar si el id del objeto ya existe en el array original
-      const existe = cartItems.some((obj, index) => obj.id === objetoActual.id && index !== i);
-    
-      // Si el id del objeto existe en el array original, eliminarlo
-      if (existe) {
-        cartItems.splice(i, 1); // Eliminar el objeto en la posición i
-        i--; // Disminuir el contador del bucle para evitar saltarse elementos
-      }
-    }*/
     toast.success("Agregado al carrito.")
   }
 
@@ -331,7 +312,22 @@ const settingsMovil = {
 };
 
 const OfferSectionMovil = () => {
+  const {cartItems,setCartItems}= useCartContext()
   const [currentSlide, setCurrentSlide] = useState(0);
+
+  const addItemCart=(id:number,name: string, img:string,price:number)=>{
+    
+
+    const nuevoItem = {
+      id:id,
+      name: name,
+      image: img,
+      count:1,
+      price:price,
+    };
+    setCartItems([...cartItems, nuevoItem]) 
+    toast.success("Agregado al carrito.")
+  }
 
   return (
     <section className='w-full md:hidden'>
@@ -350,6 +346,7 @@ const OfferSectionMovil = () => {
           <Slider {...settingsMovil}>
             {offersInfo.offers.map((offers, index) => {
               return (
+                <div onClick={()=>addItemCart(index,offers.name, offers.image, offers.price)}>
                 <OffersCard
                   key={index}
                   name={offers.name}
@@ -358,7 +355,8 @@ const OfferSectionMovil = () => {
                   discount={offers.discount}
                   delivery={offers.delivery}
                   children={offers.children}
-                />
+                  
+                /></div>
               );
             })}
           </Slider>

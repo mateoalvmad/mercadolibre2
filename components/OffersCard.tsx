@@ -21,7 +21,7 @@ const OffersCard = ({name, image, price, discount, delivery, children}:OffersCar
       <Image src={image} alt={name} width={224} height={224}/>
       <hr/>
       <div className= "pt-1">
-        <span className="text-2xl font-normal pr-3 text-section-black">{price}</span>
+        <span className="text-2xl font-normal pr-3 text-section-black">${price}</span>
         <span className="text-sm font-normal text-card-green">{discount}</span> 
       </div>
       <div className='flex pt-1.5'>
