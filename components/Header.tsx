@@ -1,16 +1,13 @@
 import React, { useEffect, useState } from 'react'
 import Image from 'next/image'
 import {MdShoppingCart} from 'react-icons/md'
-import { ModalCart } from './modals/ModalCart';
 import { useCartContext } from '@/context/cartContext';
 
 
 
 const Header = () => {
-  const {itemsCount,openModalCart,setOpenModalCart}= useCartContext()
-  useEffect(()=>{
-    console.log(itemsCount)
-  },[itemsCount])
+  const {itemsCount,setOpenModalCart}= useCartContext()
+  
   return (
     <header className='hidden md:block w-full h-[100px] pt-2.5 bg-header-background'>
     	<div className="flex justify-center">
@@ -43,11 +40,6 @@ const Header = () => {
         </div>        
         </button>
       </div>
-      <ModalCart open={openModalCart} setOpen={setOpenModalCart} modalTitle='Articulos seleccionados'>
-          <div>
-          <span>asdasdasdasd</span>
-            </div>        
-      </ModalCart>
     </header>
   )
 }

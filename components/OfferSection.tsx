@@ -6,6 +6,7 @@ import 'slick-carousel/slick/slick-theme.css';
 import { OffersCard } from './OffersCard';
 import PrevArrow from './PrevArrow';
 import NextArrow from './NextArrow';
+import { useCartContext } from '@/context/cartContext';
 
 const offersInfo = {
   offers: [
@@ -220,9 +221,24 @@ const settings = {
 };
 
 const OfferSection = () => {
+  const {cartItems,setCartItems}= useCartContext()
   const [currentSlide, setCurrentSlide] = useState(0);
-  
-
+  const addItemCart=(name: string, img:string,price:string)=>{
+    
+    const nuevoItem = {
+      name: name,
+      image: img,
+      count:1,
+      price:price,
+    };
+   /* cartItems.map((item, index) => {
+      if(item.name==nuevoItem.name){
+        item.count=item.count+1;
+        console.log(item.count)
+      }
+    })*/
+    setCartItems([...cartItems, nuevoItem])
+  }
   return (
     <section className='w-full bg-section-color'>
       <div className='flex w-full justify-center gap-4 pb-5 pt-12'>
@@ -239,15 +255,16 @@ const OfferSection = () => {
         <Slider {...settings}>
           {offersInfo.offers.map((offers, index) => {
             return (
-              <OffersCard
+              <div onClick={()=>addItemCart(offers.name, offers.image, offers.price)}>
+              <OffersCard 
                 key={index}
                 name={offers.name}
                 image={offers.image}
                 price={offers.price}
                 discount={offers.discount}
                 delivery={offers.delivery}
-                children={offers.children}
-              />
+                children={offers.children}             
+              /></div>
             );
           })}
         </Slider>

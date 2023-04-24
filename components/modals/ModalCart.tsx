@@ -10,9 +10,10 @@ interface ModalDialogProps {
   children:JSX.Element;
 }
 const ModalCart = ({open, setOpen, modalTitle, children} : ModalDialogProps) => {
+  
   return (
-  <Dialog open={open} onClose={()=>setOpen(false)}>
-    <DialogTitle>{modalTitle}</DialogTitle>
+  <Dialog  open={open} onClose={()=>setOpen(false)}>
+    <DialogTitle className='flex justify-center text-3xl text-red-400 font-medium'>{modalTitle}</DialogTitle>
     <DialogContent>{children}</DialogContent>
   </Dialog>
   )

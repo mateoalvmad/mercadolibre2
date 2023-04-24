@@ -10,12 +10,12 @@ import { CategoriesSection } from '@/components/CategoriesSection'
 import {Footer} from '@/components/Footer'
 import { Prefooter } from '@/components/Prefooter'
 import {Categories} from '@/components/Categories'
-import { SupermarketCard } from '@/components/SupermarketCard'
 import { Layout } from '@/layouts/Layout'
 import Head from 'next/head'
 import React from 'react'
 import Image from 'next/image';
 import { CartContextProvider } from '@/context/cartContext'
+import { CartDialog } from '@/components/CartDialog'
 
 const items ={
   itemsCol: [
@@ -45,7 +45,8 @@ const indexPage = () => {
         <title>Mercadolibre</title>
         <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
       </Head>
-      <CartContextProvider><Layout>
+      <CartContextProvider>
+        <Layout>
         <>
         <PosterSection/>
         <OfferSection/>
@@ -56,8 +57,10 @@ const indexPage = () => {
         <SupermarketSection/>
         <CategoriesSection/>
         <Prefooter/>
+        <CartDialog/>
         </>
-      </Layout></CartContextProvider>
+      </Layout>
+      </CartContextProvider>
       <Footer/>
   
     </> 
