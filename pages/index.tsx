@@ -17,33 +17,36 @@ import Image from 'next/image';
 import { CartContextProvider } from '@/context/cartContext'
 import { CartDialog } from '@/components/CartDialog'
 
-const items ={
+const items = {
   itemsCol: [
     {
-      imagen1:'media/item1-1.png',
-      imagen2:'media/item1-2.png'
+      imagen1: 'media/item1-1.png',
+      imagen2: 'media/item1-2.png',
     },
     {
-      imagen1:'media/item2-1.png',
-      imagen2:'media/item2-2.png'
+      imagen1: 'media/item2-1.png',
+      imagen2: 'media/item2-2.png',
     },
     {
-      imagen1:'media/item3-1.png',
-      imagen2:'media/item3-2.png'
+      imagen1: 'media/item3-1.png',
+      imagen2: 'media/item3-2.png',
     },
     {
-      imagen1:'media/item4-1.png',
-      imagen2:'media/item4-2.png'
+      imagen1: 'media/item4-1.png',
+      imagen2: 'media/item4-2.png',
     },
-  ] 
-}
+  ],
+};
 
 const indexPage = () => {
   return (
     <>
       <Head>
         <title>Mercadolibre</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+        <meta
+          name='viewport'
+          content='width=device-width, initial-scale=1'
+        ></meta>
       </Head>
       <CartContextProvider>
         <Layout>
@@ -67,4 +70,4 @@ const indexPage = () => {
   )
 }
 
-export default indexPage
+export default indexPage;

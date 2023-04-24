@@ -24,12 +24,14 @@ const OffersCard = ({name, image, price, discount, delivery, children}:OffersCar
         <span className="text-2xl font-normal pr-3 text-section-black">{price}</span>
         <span className="text-sm font-normal text-card-green">{discount}</span> 
       </div>
-      <div className= "flex pt-1.5">
-        <span className="text-xs font-semibold pt-1.5 pr-1.5 text-card-green">{delivery}</span>
+      <div className='flex pt-1.5'>
+        <span className='pr-1.5 pt-1.5 text-xs font-semibold text-card-green'>
+          {delivery}
+        </span>
         {children}
-      </div>  
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export {OffersCard}
+export { OffersCard };
